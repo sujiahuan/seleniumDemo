@@ -10,13 +10,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(ZTestReport.class)
+//@Listeners(ZTestReport.class)
 public class TestDemo {
 
 	private ChromeDriver driver;
 	
 
-	@Test(invocationCount = 4, threadPoolSize = 2)
+	@Test(invocationCount = 2, threadPoolSize = 2)
 	public void testName() throws Exception {
 		//new一个类对象，代表每个人的身份
 		TestDemo demo = new TestDemo();

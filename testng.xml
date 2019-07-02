@@ -6,4 +6,7 @@
       <class name="org.jiahuan.Case.TestDemo"/>
     </classes>
   </test> <!-- Test -->
+   <listeners>
+        <listener class-name="org.jiahuan.tools.ZTestReport" />
+    </listeners>
 </suite> <!-- Suite -->
