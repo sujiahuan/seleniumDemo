@@ -1,14 +1,12 @@
 package org.jiahuan.Case;
 
-import java.util.Properties;
-
 import org.jiahuan.page.HomePage;
 import org.jiahuan.page.LoginPage;
-import org.jiahuan.tools.ZTestReport;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.jiahuan.tools.*;
 
 //@Listeners(ZTestReport.class)
 public class TestDemo {
