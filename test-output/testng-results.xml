@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2128" started-at="2019-07-08T04:53:56Z" finished-at="2019-07-08T04:53:58Z">
+  <suite name="Default suite" duration-ms="2150" started-at="2019-07-08T06:57:54Z" finished-at="2019-07-08T06:57:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2128" started-at="2019-07-08T04:53:56Z" finished-at="2019-07-08T04:53:58Z">
+    <test name="Default test" duration-ms="2150" started-at="2019-07-08T06:57:54Z" finished-at="2019-07-08T06:57:57Z">
       <class name="org.jiahuan.Case.LoginTest">
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:org.jiahuan.Case.LoginTest@204f30ec]" name="testLogin" duration-ms="25" started-at="2019-07-08T04:53:56Z" description="登录" finished-at="2019-07-08T04:53:56Z">
+        <test-method status="PASS" signature="testName()[pri:0, instance:org.jiahuan.Case.LoginTest@e25b2fe]" name="testName" duration-ms="32" started-at="2019-07-08T06:57:55Z" finished-at="2019-07-08T06:57:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="FAIL" signature="end()[pri:0, instance:org.jiahuan.Case.LoginTest@204f30ec]" name="end" is-config="true" duration-ms="2021" started-at="2019-07-08T04:53:56Z" finished-at="2019-07-08T04:53:58Z">
+        </test-method> <!-- testName -->
+        <test-method status="FAIL" signature="end()[pri:0, instance:org.jiahuan.Case.LoginTest@e25b2fe]" name="end" is-config="true" duration-ms="2021" started-at="2019-07-08T06:57:55Z" finished-at="2019-07-08T06:57:57Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at org.jiahuan.Case.LoginTest.end(LoginTest.java:35)
+at org.jiahuan.Case.LoginTest.end(LoginTest.java:39)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
