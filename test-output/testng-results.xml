@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2150" started-at="2019-07-08T06:57:54Z" finished-at="2019-07-08T06:57:57Z">
+  <suite name="Default suite" duration-ms="2108" started-at="2019-07-08T07:11:24Z" finished-at="2019-07-08T07:11:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2150" started-at="2019-07-08T06:57:54Z" finished-at="2019-07-08T06:57:57Z">
+    <test name="Default test" duration-ms="2108" started-at="2019-07-08T07:11:24Z" finished-at="2019-07-08T07:11:26Z">
       <class name="org.jiahuan.Case.LoginTest">
-        <test-method status="PASS" signature="testName()[pri:0, instance:org.jiahuan.Case.LoginTest@e25b2fe]" name="testName" duration-ms="32" started-at="2019-07-08T06:57:55Z" finished-at="2019-07-08T06:57:55Z">
+        <test-method status="PASS" signature="testName()[pri:0, instance:org.jiahuan.Case.LoginTest@e25b2fe]" name="testName" duration-ms="21" started-at="2019-07-08T07:11:24Z" finished-at="2019-07-08T07:11:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testName -->
-        <test-method status="FAIL" signature="end()[pri:0, instance:org.jiahuan.Case.LoginTest@e25b2fe]" name="end" is-config="true" duration-ms="2021" started-at="2019-07-08T06:57:55Z" finished-at="2019-07-08T06:57:57Z">
+        <test-method status="FAIL" signature="end()[pri:0, instance:org.jiahuan.Case.LoginTest@e25b2fe]" name="end" is-config="true" duration-ms="2021" started-at="2019-07-08T07:11:24Z" finished-at="2019-07-08T07:11:26Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
