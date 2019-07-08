@@ -3,7 +3,7 @@
 <suite thread-count="1" name="Suite" parallel="methods">
   <test thread-count="1" name="Test" parallel="methods">
     <classes>
-      <class name="org.jiahuan.Case.TestDemo"/>
+      <class name="org.jiahuan.Case.LoginTest"/>
     </classes>
   </test> <!-- Test -->
   
