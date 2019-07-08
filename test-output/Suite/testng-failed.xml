@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods" allow-return-values="true">
   <listeners>
     <listener class-name="org.jiahuan.tools.ZTestReport"/>
   </listeners>
@@ -9,7 +9,7 @@
       <class name="org.jiahuan.Case.TestDemo">
         <methods>
           <include name="end"/>
-          <include name="testName"/>
+          <include name="testLogin"/>
         </methods>
       </class> <!-- org.jiahuan.Case.TestDemo -->
     </classes>

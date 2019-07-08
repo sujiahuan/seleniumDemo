@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
-  <listeners>
-    <listener class-name="org.jiahuan.tools.ZTestReport"/>
-  </listeners>
-  <test thread-count="1" name="Test(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.jiahuan.Case.TestDemo">
+      <class name="org.jiahuan.Case.LoginTest">
         <methods>
+          <include name="testLogin"/>
           <include name="end"/>
-          <include name="testName"/>
+          <include name="testName1"/>
         </methods>
-      </class> <!-- org.jiahuan.Case.TestDemo -->
+      </class> <!-- org.jiahuan.Case.LoginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
