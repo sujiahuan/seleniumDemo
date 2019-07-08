@@ -11,7 +11,12 @@ public class LoginTest {
 
 	private ChromeDriver driver;
 	
+	@Test
+	public void testName() throws Exception {
+		System.out.println(System.getProperty("user.dir"));
+	}
 
+	@Ignore
 	@Test(description = "登录")
 	public void testLogin() throws Exception {
 		System.out.println(System.getProperty("user.dir"));
