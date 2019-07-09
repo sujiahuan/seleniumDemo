@@ -1,5 +1,9 @@
 package org.jiahuan.Case;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
+import static org.testng.Assert.assertNull;
+
 import org.jiahuan.page.LoginPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -17,20 +21,35 @@ public class LoginTest {
 		System.out.println(System.getProperty("user.dir"));
 			driver=new ChromeDriver();
 			LoginPage loginPage = new LoginPage(driver);
+			//打开登录界面
 			loginPage.openLoginPage();
-			loginPage.sendUserName("user");
+			//输入账号
+			loginPage.sendUserName("");
+			//输入密码
 			loginPage.sendPassword("123456");
-			String url = driver.getCurrentUrl();
-			while(url.equals(driver.getCurrentUrl())) {
+			//先执行再判断
+			do {
+				//输入验证码
 				loginPage.sendVerificationCode();
+				//点击登录
 				loginPage.clickLoginButton();
-				Thread.sleep(2000);
-			}
+			//判断验证码错误语句是否出现
+			} while (loginPage.existErrorCodeHint());
+			//断言是否登录成功
+			assertNotEquals(loginPage.getUrl(),driver.getCurrentUrl());
+	}
+	
+	@Test
+	public void testName() throws Exception {
+		testLogin();
 	}
 
+	/**
+	 * 
+	 * @throws Exception
+	 */
 	@AfterMethod
-	public void end() throws Exception {
-		Thread.sleep(2000);
+	public void endMethod() throws Exception {
 		driver.close();
 	}
 }
