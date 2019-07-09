@@ -7,7 +7,6 @@
         <methods>
           <include name="testLogin"/>
           <include name="end"/>
-          <include name="testName1"/>
         </methods>
       </class> <!-- org.jiahuan.Case.LoginTest -->
     </classes>
