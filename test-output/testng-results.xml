@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14703" started-at="2019-07-09T06:05:36Z" finished-at="2019-07-09T06:05:51Z">
+  <suite name="Default suite" duration-ms="17454" started-at="2019-07-10T08:22:34Z" finished-at="2019-07-10T08:22:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14703" started-at="2019-07-09T06:05:36Z" finished-at="2019-07-09T06:05:51Z">
+    <test name="Default test" duration-ms="17454" started-at="2019-07-10T08:22:34Z" finished-at="2019-07-10T08:22:51Z">
       <class name="org.jiahuan.Case.LoginTest">
-        <test-method status="FAIL" signature="testLogin()[pri:0, instance:org.jiahuan.Case.LoginTest@77cd7a0]" name="testLogin" duration-ms="12347" started-at="2019-07-09T06:05:36Z" description="登录" finished-at="2019-07-09T06:05:49Z">
+        <test-method status="FAIL" signature="testLogin()[pri:0, instance:org.jiahuan.Case.LoginTest@77cd7a0]" name="testLogin" duration-ms="17180" started-at="2019-07-10T08:22:34Z" description="登录" finished-at="2019-07-10T08:22:51Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -49,10 +49,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="end()[pri:0, instance:org.jiahuan.Case.LoginTest@77cd7a0]" name="end" is-config="true" duration-ms="2269" started-at="2019-07-09T06:05:49Z" finished-at="2019-07-09T06:05:51Z">
+        <test-method status="PASS" signature="endMethod()[pri:0, instance:org.jiahuan.Case.LoginTest@77cd7a0]" name="endMethod" is-config="true" duration-ms="218" started-at="2019-07-10T08:22:51Z" finished-at="2019-07-10T08:22:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- end -->
+        </test-method> <!-- endMethod -->
       </class> <!-- org.jiahuan.Case.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

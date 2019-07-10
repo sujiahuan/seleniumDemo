@@ -24,7 +24,7 @@ public class LoginTest {
 			//打开登录界面
 			loginPage.openLoginPage();
 			//输入账号
-			loginPage.sendUserName("");
+			loginPage.sendUserName("admin");
 			//输入密码
 			loginPage.sendPassword("123456");
 			//先执行再判断
@@ -39,15 +39,9 @@ public class LoginTest {
 			assertNotEquals(loginPage.getUrl(),driver.getCurrentUrl());
 	}
 	
-	@Test
-	public void testName() throws Exception {
-		testLogin();
-	}
 
-	/**
-	 * 
-	 * @throws Exception
-	 */
+
+
 	@AfterMethod
 	public void endMethod() throws Exception {
 		driver.close();

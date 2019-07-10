@@ -71,9 +71,15 @@ public class LoginPage {
 	public boolean existErrorCodeHint() {
 		try {
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-			driver.findElementByCssSelector(errorCodeHint);
-			return true;
+			WebElement webElement = driver.findElementByCssSelector(errorCodeHint);
+			String text = webElement.getText();
+			if(text.equals("验证码不正确")||text.equals("")) {
+				System.out.println("True");
+				return true;
+			}
+			return false;
 		} catch (NoSuchElementException e) {
+			System.out.println("False");
 			return false;
 		}
 	}
