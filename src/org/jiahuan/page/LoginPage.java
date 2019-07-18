@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,6 +17,7 @@ import org.jiahuan.tools.TestTools;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -71,14 +73,15 @@ public class LoginPage {
 	public boolean existErrorCodeHint() {
 		try {
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-			WebElement webElement = driver.findElementByCssSelector(errorCodeHint);
-			String text = webElement.getText();
+			List<WebElement> list = driver.findElementsByCssSelector(errorCodeHint);
+			System.out.println(list.size());
+			String text = list.get(list.size()-1).getText();
 			if(text.equals("验证码不正确")||text.equals("")) {
 				System.out.println("True");
 				return true;
 			}
 			return false;
-		} catch (NoSuchElementException e) {
+		}catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("False");
 			return false;
 		}

@@ -29,6 +29,8 @@ public class LoginTest {
 			loginPage.sendPassword("123456");
 			//先执行再判断
 			do {
+				//给错误提示休息时间
+				Thread.sleep(2000);
 				//输入验证码
 				loginPage.sendVerificationCode();
 				//点击登录
@@ -36,7 +38,7 @@ public class LoginTest {
 			//判断验证码错误语句是否出现
 			} while (loginPage.existErrorCodeHint());
 			//断言是否登录成功
-			assertNotEquals(loginPage.getUrl(),driver.getCurrentUrl());
+			assertNotEquals(loginPage.getUrl(),driver.getCurrentUrl(),"相等了");
 	}
 	
 
