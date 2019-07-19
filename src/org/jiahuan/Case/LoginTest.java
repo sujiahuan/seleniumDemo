@@ -13,14 +13,13 @@ import org.testng.annotations.Test;
 //@Listeners(ZTestReport.class)
 public class LoginTest {
 
-	private ChromeDriver driver;
+	public ChromeDriver driver;
 	
-
 	@Test(description = "登录")
 	public void testLogin() throws Exception {
 		System.out.println(System.getProperty("user.dir"));
-			driver=new ChromeDriver();
-			LoginPage loginPage = new LoginPage(driver);
+			this.driver=new ChromeDriver();
+			LoginPage loginPage = new LoginPage(this.driver);
 			//打开登录界面
 			loginPage.openLoginPage();
 			//输入账号
