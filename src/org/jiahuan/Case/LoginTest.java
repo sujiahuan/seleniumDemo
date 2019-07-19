@@ -37,7 +37,7 @@ public class LoginTest {
 			//判断验证码错误语句是否出现
 			} while (loginPage.existErrorCodeHint());
 			//断言是否登录成功
-			assertNotEquals(loginPage.getUrl(),driver.getCurrentUrl(),"相等了");
+			assertNotEquals(loginPage.getUrl(),driver.getCurrentUrl(),"登录失败");
 	}
 	
 

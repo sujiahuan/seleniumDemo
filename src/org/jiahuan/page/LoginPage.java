@@ -77,12 +77,12 @@ public class LoginPage {
 			System.out.println(list.size());
 			String text = list.get(list.size()-1).getText();
 			if(text.equals("验证码不正确")||text.equals("")) {
-				System.out.println("True");
+				System.out.println("验证码输入错误");
 				return true;
 			}
 			return false;
 		}catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("False");
+			System.out.println("验证码输入正确");
 			return false;
 		}
 	}
