@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.jiahuan.Case.HelloTest">
+      <class name="org.jiahuan.tools.TestWrod">
         <methods>
-          <include name="testName"/>
-          <include name="testLogin"/>
-          <include name="endMethod"/>
+          <include name="testName1"/>
         </methods>
-      </class> <!-- org.jiahuan.Case.HelloTest -->
+      </class> <!-- org.jiahuan.tools.TestWrod -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
