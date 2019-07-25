@@ -5,12 +5,18 @@ import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertNull;
 
 import org.jiahuan.page.LoginPage;
+import org.jiahuan.tools.TestNGListener;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Ignore;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Attachment;
+
 //@Listeners(ZTestReport.class)
+@Listeners(TestNGListener.class)
 public class LoginTest {
 
 	public ChromeDriver driver;
@@ -19,11 +25,13 @@ public class LoginTest {
 	public void testLogin() throws Exception {
 		System.out.println(System.getProperty("user.dir"));
 			this.driver=new ChromeDriver();
+			TestNGListener.setDriver(this.driver);
 			LoginPage loginPage = new LoginPage(this.driver);
 			//打开登录界面
 			loginPage.openLoginPage();
 			//输入账号
 			loginPage.sendUserName("admin");
+			assertEquals(true,false);
 			//输入密码
 			loginPage.sendPassword("123456");
 			//先执行再判断
@@ -40,7 +48,6 @@ public class LoginTest {
 			assertNotEquals(loginPage.getUrl(),driver.getCurrentUrl(),"登录失败");
 	}
 	
-
 
 
 	@AfterMethod
